@@ -35,3 +35,34 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// *********************************************************
+
+//             MEMORY
+
+// Stack (primitive) :- When the stack memory is accessed, it gets a copy of the variable that was declared. ,
+
+let myName = "Ayush"
+
+let anotherName = myName
+anotherName = "Raj"
+
+console.log(myName);
+console.log(anotherName);
+
+
+// Heap (Non-primitive) :- When any memory is defined under heap, then it gives reference of the original value, which if changed, the original value will change.
+
+let userOne = {
+    email: "ayshraj@goolgle.com",
+    upi: "user@oksbi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "raj@amazon.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
