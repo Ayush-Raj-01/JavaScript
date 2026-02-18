@@ -17,7 +17,7 @@ const all_new_heros = [...marvel_heros, ...dc_heros]
 
 console.log(all_new_heros);
 
-// flat is used used to remove nesting inside arrays.
+// flat is used to remove nesting inside arrays and make it into one array.
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 
 const real_another_array = another_array.flat(Infinity)
@@ -27,6 +27,7 @@ console.log(real_another_array);
 
 console.log(Array.isArray("Ayush"))
 
+// from makes string to array
 console.log(Array.from("Ayush"))
 console.log(Array.from({name: "ayush"})) // interesting
 
