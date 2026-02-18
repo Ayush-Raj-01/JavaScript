@@ -8,15 +8,16 @@ console.log(myArr[0]);
 
 // Array methods
 // push add the value at the end and pop removes from the end
-myArr.push(6)
-myArr.push(7)
-console.log(myArr);
-myArr.pop()
+// myArr.push(6)
+// myArr.push(7)
+// console.log(myArr);
+// myArr.pop()
 
 // unshift adds the value from front and shift deletes from the starting 
 myArr.unshift(9)
 console.log(myArr);
 myArr.shift()
+console.log(myArr);
 
 console.log(myArr.includes(9));
 console.log(myArr.indexOf(3));
